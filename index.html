@@ -7,12 +7,24 @@
   <title>Sprint Challenge - Home</title>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="style/index.css">
 
 </head>
 
 <body>
     <div class="container">
+        <section class="header"> 
+            <img class='header-img'src="assets/lambda-black.png" alt="Lambda img">
+            <!-- <span class='header-nav'> -->
+                <a id ='home'>Home</a>
+                <a>About</a>
+                <a>Products</a>
+                <a>Blog</a>
+                <a>Contact</a>
+            <!-- </span> -->
+        </section>
+
+        <img class='section-img' src="data:image/jpeg;base64,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" alt="">
    
         <section class="top-content">
             <div class="text-container">
@@ -30,16 +42,16 @@
             <h2>Why Did It Have To Be Boxes...</h2>
             
             <div class="boxes">
-                <div class="box">Box 1</div>
-                <div class="box">Box 2</div>
-                <div class="box">Box 3</div>
-                <div class="box">Box 4</div>
-                <div class="box">Box 5</div>
-                <div class="box">Box 6</div>
-                <div class="box">Box 7</div>
-                <div class="box">Box 8</div>
-                <div class="box">Box 9</div>
-                <div class="box">Box 10</div>
+                <div class="box" id='one' >Box 1</div>
+                <div class="box" id='two'>Box 2</div>
+                <div class="box" id='three'>Box 3</div>
+                <div class="box" id='four'>Box 4</div>
+                <div class="box" id='five'>Box 5</div>
+                <div class="box" id='six'>Box 6</div>
+                <div class="box" id='seven'>Box 7</div>
+                <div class="box" id='eight'>Box 8</div>
+                <div class="box" id='nine'>Box 9</div>
+                <div class="box" id='ten'>Box 10</div>
             </div>
         
         </section>
